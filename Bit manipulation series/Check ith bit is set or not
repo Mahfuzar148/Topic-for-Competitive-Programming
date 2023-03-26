@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n = 5;
+
+    /**
+    check second bit is set or not
+
+    to do it,Right shift operation have to be done twice
+    then AND operation have to be done by 1
+    Right shift operation should be done as many times as bit is checked
+    */
+
+    n = n << 2;
+
+    if((n&1)!= 0)
+    {
+        cout<<"SET"<<endl;
+    }
+    else
+    {
+        cout<<"NOT SET"<<endl;
+    }
+    return 0;
+
+}
