@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter a number = ";
+    cin>>n;
+    int c = 0;
+    int m = 32;
+    /**if n is integer then m = 32
+    if  n is long long integer then m = 64
+    */
+    int i = 0;
+    
+    while(i<m){
+
+        if((n&(1<<i))!=0)
+        {
+            c++;
+        }
+       i++;
+    }
+
+    cout<<"Set bit = "<<c<<endl;
+    return 0;
+}
