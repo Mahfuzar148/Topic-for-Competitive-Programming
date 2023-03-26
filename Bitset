@@ -1,0 +1,81 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a;
+    cout<<"Enter a integer number = ";
+    cin>>a;
+    ///convert integer number into binary number
+    bitset<10>b(a);
+    cout<<b<<endl;
+
+    /// convert binary string into integer number
+
+     bitset<10>b1(string("1010"));
+
+     cout<<b1.to_ullong()<<endl;
+
+      bitset<10>b2(200);
+
+      cout<<"Binary = "<<b2<<endl;
+
+      /// complement at position 2
+
+      b2.flip(2);
+
+      cout<<"Complement at position 2 = "<<b2<<endl;
+
+      /// complement of b2
+
+      /// b2.any() ,return true if at least 1 bit is 1
+
+      cout<<"b2.any() = "<<b2.any()<<endl;
+
+      /// b2.count() ,return number of 1 in bitset
+
+      cout<<"Number of 1 = "<<b2.count()<<endl;
+
+      /// b2.size(),return size of bitset
+
+      cout<<"size = "<<b2.size()<<endl;
+
+      ///b2.test(2),return value of index 2
+
+      cout<<"b2.test(2)"<<b2.test(2)<<endl;
+
+      /// b2.all() ,return true if all bits are 1
+
+      cout<<"b2.all() = "<<b2.all()<<endl;
+
+      /// b2.none() ,return true if all bits are 0
+
+      cout<<"b2.none() = "<<b2.none()<<endl;
+
+      b2.flip();
+
+      cout<<"Complement = "<<b2<<endl;
+
+      ///set 0 at position 3
+
+      b2.set(3,0);
+
+      cout<<"set 0 at position 3 = "<<b2<<endl;
+
+      ///set all value 1
+
+      b2.set();
+
+      cout<<"set = "<<b2<<endl;
+
+      /// reset at position 3
+
+      b2.reset(3);
+
+       cout<<"reset at position 3 = "<<b2<<endl;
+
+       /// reset all bits
+
+       b2.reset();
+
+       cout<<"reset = "<<b2<<endl;
+}
