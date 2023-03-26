@@ -11,7 +11,7 @@ int main(){
     Right shift operation should be done as many times as bit is checked
     */
 
-    n = n << 2;
+    n = n >> 2;
 
     if((n&1)!= 0)
     {
